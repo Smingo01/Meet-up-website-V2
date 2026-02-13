@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services - Smingo</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.hero-services{
+    background:linear-gradient(135deg,#1E3A8A,#2563EB);
+    color:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.hero-services h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.services-section{
+    padding:80px 20px;
+}
+
+.services-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.service-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align:center;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0;
+    color:#1E3A8A;
+}
+
+.rating{
+    color:#FACC15;
+    margin-bottom:15px;
+}
+
+.service-card button{
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    background:#1E3A8A;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.service-card button:hover{
+    background:#111827;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h2>Smingo</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="appointment.html">Appointment</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-services">
+    <h1>Our Services</h1>
+    <p>เลือกบริการที่เหมาะกับคุณ แล้วจองได้ทันที</p>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section">
+<div class="services-container">
+
+<div class="service-grid">
+
+    <div class="service-card">
+        <h3>🎁 There are special services available</h3>
+        <p>มีบริการสุดพิเศษสำหรับลูกค้าหน้าใหม่</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+        <div class="price">฿1,500 / 60 นาที</div>
+        <button onclick="window.location.href='appointment.html'">
+            Book Now
+        </button>
+    </div>
+
+    <div class="service-card">
+        <h3>💬 Consultation</h3>
+        <p>บริการให้คำปรึกษาแบบมืออาชีพ</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.5)</div>
+        <div class="price">฿800 / 45 นาที</div>
+        <button onclick="window.location.href='appointment.html'">
+            Book Now
+        </button>
+    </div>
+
+    <div class="service-card">
+        <h3>🌐 Online & Offline</h3>
+        <p>เลือกได้ทั้งนัดออนไลน์หรือพบตัวจริง</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (4.9)</div>
+        <div class="price">฿3,000 / 1 ชั่วโมงครึ่ง</div>
+        <button onclick="window.location.href='appointment.html'">
+            Book Now
+        </button>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+<footer>© 2026 Smingo. All rights reserved.</footer>
+
+</body>
+</html>

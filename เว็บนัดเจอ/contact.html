@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Smingo</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.hero-contact{
+    background:linear-gradient(135deg,#111827,#2563EB);
+    color:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.contact-section{
+    padding:80px 20px;
+}
+
+.contact-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:50px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+.contact-info p{
+    margin:15px 0;
+}
+
+.contact-form{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+.contact-form button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#1E3A8A;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#111827;
+}
+
+.map{
+    margin-top:60px;
+    border-radius:20px;
+    overflow:hidden;
+}
+</style>
+
+<script>
+function sendMessage(e){
+    e.preventDefault();
+    alert("ส่งข้อความเรียบร้อยแล้ว เราจะติดต่อกลับเร็วที่สุด!");
+    document.getElementById("contactForm").reset();
+}
+</script>
+
+</head>
+<body>
+
+<header>
+<h2>Smingo</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="appointment.html">Appointment</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-contact">
+    <h1>Contact Us</h1>
+    <p>ติดต่อทีมงานของเราได้ทุกวัน เรายินดีให้บริการ</p>
+</section>
+
+<!-- CONTACT CONTENT -->
+<section class="contact-section">
+
+<div class="contact-container">
+
+    <!-- LEFT -->
+    <div class="contact-info">
+        <h2>📍 Contact Information</h2>
+        <p>📧 Email: support@smingo.com</p>
+        <p>📞 Phone: 099-999-9999</p>
+        <p>🏢 Location: Bangkok, Thailand</p>
+        <p>🕒 Hours: Mon - Fri (09:00 - 18:00)</p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contactForm" onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+<!-- MAP -->
+<div class="map">
+<iframe 
+    src="https://www.google.com/maps?q=Bangkok&output=embed"
+    width="100%" 
+    height="400" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+</div>
+
+</section>
+
+<footer>© 2026 Smingo. All rights reserved.</footer>
+
+</body>
+</html>

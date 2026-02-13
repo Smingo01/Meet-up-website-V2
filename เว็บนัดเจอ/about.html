@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About - Smingo</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.hero-about{
+    background:linear-gradient(135deg,#111827,#1E3A8A);
+    color:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.hero-about h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about-section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.about-container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.cta-about{
+    background:#1E3A8A;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.cta-about button{
+    margin-top:20px;
+    padding:12px 25px;
+    border-radius:25px;
+    border:none;
+    background:white;
+    color:#1E3A8A;
+    cursor:pointer;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h2>Smingo</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="appointment.html">Appointment</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-about">
+    <h1>About Smingo</h1>
+    <p>เราคือแพลตฟอร์มระบบจองนัดหมายที่ช่วยให้ธุรกิจและลูกค้าบริหารเวลาได้อย่างมีประสิทธิภาพ</p>
+</section>
+
+<!-- STORY -->
+<section class="about-section">
+<div class="about-container">
+
+    <h2>Our Story</h2>
+    <p style="margin-top:20px;">
+        Smingo ถูกพัฒนาขึ้นเพื่อแก้ปัญหาการจองนัดหมายที่ยุ่งยาก 
+        ลดการซ้ำซ้อน และเพิ่มความสะดวกสบายให้ทั้งผู้ให้บริการและลูกค้า 
+        เราเชื่อว่าเวลาเป็นทรัพยากรที่มีค่าที่สุด
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>🎯 Vision</h3>
+            <p>เป็นระบบจองนัดหมายออนไลน์อันดับต้น ๆ ที่ใช้งานง่ายและปลอดภัย</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Mission</h3>
+            <p>ช่วยธุรกิจทุกขนาดจัดการเวลาได้อย่างมืออาชีพ</p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Security</h3>
+            <p>ใช้ระบบ Login และการจัดเก็บข้อมูลอย่างปลอดภัย</p>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- TEAM -->
+<section class="about-section" style="background:#F3F4F6;">
+<div class="about-container">
+
+    <h2>Our Team</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>👨‍💻 Developer</h3>
+            <p>ผู้พัฒนาและออกแบบระบบ</p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Designer</h3>
+            <p>ออกแบบ UI/UX ให้ใช้งานง่าย</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Support</h3>
+            <p>ดูแลและช่วยเหลือลูกค้า</p>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-about">
+    <h2>พร้อมเริ่มใช้งานหรือยัง?</h2>
+    <p>สัมผัสประสบการณ์จองนัดหมายที่ง่ายและทันสมัย</p>
+    <button onclick="window.location.href='appointment.html'">
+        จองนัดหมายตอนนี้
+    </button>
+</section>
+
+<footer>© 2026 Smingo. All rights reserved.</footer>
+
+</body>
+</html>
